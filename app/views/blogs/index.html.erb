@@ -1,0 +1,18 @@
+<div class="container">
+  <h1>記事一覧</h1>
+  <p><%= notice %></p>
+  <ul class="row">
+    <% @blogs.each do |blog| %>
+    <li class="col-sm-6 col-md-6"><%= link_to blog.title, blog_path(blog.id) %></li> 
+    <li class="col-sm-6 col-md-4"><%= link_to '編集', edit_blog_path(blog.id), data: { confirm: '本当に編集していいですか？' }, class: 'btn btn-info' %>　　　<%= link_to '削除', blog_path(blog.id), method: :delete ,data: { confirm: '本当に削除していいですか？' }, class: 'btn btn-danger' %></li> 
+    <% end %>
+  </ul>
+</div>
+
+
+
+
+<br>
+
+<%= link_to '新規投稿', new_blog_path %>
+

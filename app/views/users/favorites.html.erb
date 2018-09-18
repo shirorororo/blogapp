@@ -1,0 +1,9 @@
+<div class="container">
+  <h1>お気に入り一覧</h1>
+  <p><%= notice %></p>
+  <ul class="row">
+    <% @favorites_blogs.each do |favorite| %>
+    <li class="col-sm-6 col-md-6"><%= link_to(favorite.title, blog_path(id: favorite.id)) %></li> 
+    <% end %>
+  </ul>
+</div>

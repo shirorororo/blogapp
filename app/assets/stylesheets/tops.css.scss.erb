@@ -1,0 +1,80 @@
+header {
+  width: 100%;
+  background-color: #99CCFF;
+  height: 60px;
+  position: fixed;
+  top: 0; /* 固定する位置 */
+  left: 0; /* 固定する位置 */
+  right: 0;  /* 固定する位置 */
+  z-index: 10;
+}
+
+header ul {
+  margin: 0 auto;
+  list-style: none;
+  font-weight: bold;
+}
+
+header ul a {
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+  color: white;
+}
+
+
+header ul a:hover {
+  color:#ffffff;
+  background: #99CCFF; 
+}
+
+header li {
+  float: left;
+  width: auto;
+}
+
+.about-background {
+  padding-bottom: 15%;
+  width: 100%;
+  background-attachment: fixed;
+  background:#ddd url(<%= asset_path "top.jpg"%>) no-repeat center center;
+  background-size:100% auto;
+}
+
+.about-background h1 {
+  padding: 45px;
+  margin: 20px;
+  color:#FFF;
+  -webkit-text-stroke-color: #000;
+  -webkit-text-stroke-width: 1px;
+}
+
+.about-background p {
+  padding: 30px;
+  margin: 30px;
+  background-color: rgba(255,255,255,0.5);
+  color:#000;
+}
+
+footer {
+  width: 100%;
+  background-color:#99CCFF;
+  padding: 20px 0 10px 0;
+  color: white;
+  margin: auto;
+  padding-bottom: 10px;
+  font-size: 12px;
+  position: fixed;
+  bottom: 0;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  text-align: center;
+  padding-bottom: 60px; 
+  margin: auto;
+}
