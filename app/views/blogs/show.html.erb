@@ -1,7 +1,8 @@
 <div class="container">
   <h1>ブログ詳細画面</h1>
-  <p>タイトル: <%= @blog.title %></p>
-  <p>内容: <%= @blog.content %></p>
+  <p><%= image_tag @blog.image %></p>
+  <p><strong>タイトル: <%= @blog.title %></strong></p>
+  <p><strong>内容: <%= @blog.content %></strong></p>
   
   <ul class="row">
   <% unless @blog.user_id == current_user.id %>

@@ -13,10 +13,10 @@
 <% end %>
 
 <%= form_with(model: @user, local: true) do |f| %>  
-  <%= f.label :name %>
+  <%= f.label :ユーザー名 %>
   <%= f.text_field :name %>
 
-  <%= f.label :email %>
+  <%= f.label :メールアドレス %>
   <%= f.email_field :email %>
 
   <%= f.label :password %>

@@ -14,10 +14,16 @@
     <%= form.label :タイトル %>
     <%= form.text_field :title, class: 'form_title' %>
   </div>
-  <div class="blog_title">
+  <div class="blog_content">
     <%= form.label :本文 %>
     <%= form.text_field :content, class: 'form_content' %>
   </div>
+  <div class="blog_image">
+    <%= form.label :画像 %>
+    <%= image_tag(@blog.image.url) if @blog.image.url %>
+    <%= form.file_field :image, id: :blog_image, class: 'form_image'%>
+  </div>
+  
   <%= form.submit :投稿する, class: 'btn btn-info' %>
 <% end %>
 

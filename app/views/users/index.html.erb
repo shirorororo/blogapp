@@ -3,7 +3,7 @@
   <p><%= notice %></p>
   <ul class="row">
   <% @users.each do |user| %>
-     <li class="col-sm-6 col-md-6"><%= link_to user.name, user_path(user.id) %></li> 
+     <li class="col-sm-6 col-md-6"><%= image_tag user.image,:size =>'50x50' %>　　<%= link_to user.name, user_path(user.id) %></li> 
   <% end %>
   </ul>
 </div>
