@@ -10,11 +10,11 @@ h1 {
   margin: 10px;
   border-radius: 10px;
   border-style: solid;
-  border-color:#f0ffff;
-  background:#f0ffff;
+  border-color: #ffead6;
+  background: #ffead6;
   padding: 20px;
   font-size: 20px;
-    
+  opacity: 0.5;
 }
 
 .col-md-4 {
@@ -28,10 +28,23 @@ ul,li {
   list-style: none;
 }
 
-.btn-info {
-  background: #87cefa; 
-  border-color: #87cefa;
-  color: #696969;
+.btn-info{
+  background: #ffbf7f;
+  border-color: #ffbf7f;
+  color: #FFF;
+}
+
+.btn-info:hover {
+　opacity: 0.5 ;
+  background: #ffbf7f;
+  border-color: #ffbf7f;
+}
+
+
+.btn-info:active {
+　opacity: 0.5 ;
+  background: #ffbf7f;
+  border-color: #ffbf7f;
 }
 
 .btn-danger {
@@ -39,4 +52,3 @@ ul,li {
   border-color: #ffb6c1;
   color: #696969;
 }
-

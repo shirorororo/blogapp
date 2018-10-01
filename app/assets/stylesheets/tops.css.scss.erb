@@ -1,12 +1,18 @@
 header {
   width: 100%;
-  background-color: #99CCFF;
-  height: 60px;
+  background-color: #FFF;
+  height: 200px;
   position: fixed;
   top: 0; /* 固定する位置 */
   left: 0; /* 固定する位置 */
   right: 0;  /* 固定する位置 */
   z-index: 10;
+  background:#ddd url(<%= asset_path "insta.jpg"%>) no-repeat center center;
+  background-size:100% auto;
+}
+
+header h3,h2 {
+ text-align: left;
 }
 
 header ul {
@@ -20,12 +26,16 @@ header ul a {
   padding: 20px;
   text-decoration: none;
   color: white;
+  text-size: 30px;
+  border-radius: 20px;
+  -webkit-text-stroke-color: #000;
+  -webkit-text-stroke-width: 1px;
 }
 
 
 header ul a:hover {
-  color:#ffffff;
-  background: #99CCFF; 
+　opacity: 0.5 ;
+
 }
 
 header li {
@@ -34,17 +44,14 @@ header li {
 }
 
 .about-background {
-  padding-bottom: 15%;
+  padding-bottom: 30%;
   width: 100%;
-  background-attachment: fixed;
-  background:#ddd url(<%= asset_path "top.jpg"%>) no-repeat center center;
-  background-size:100% auto;
 }
 
 .about-background h1 {
-  padding: 45px;
+  padding-top: 200px;
   margin: 20px;
-  color:#FFF;
+  color:#000000;
   -webkit-text-stroke-color: #000;
   -webkit-text-stroke-width: 1px;
 }
@@ -56,17 +63,7 @@ header li {
   color:#000;
 }
 
-footer {
-  width: 100%;
-  background-color:#99CCFF;
-  padding: 20px 0 10px 0;
-  color: white;
-  margin: auto;
-  padding-bottom: 10px;
-  font-size: 12px;
-  position: fixed;
-  bottom: 0;
-}
+
 
 html {
   position: relative;

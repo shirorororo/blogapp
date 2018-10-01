@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
+  root :to => 'tops#index'
   resources :sessions, only: [:new, :create, :destroy]
   resources :users
-
   get "/users/favorites/:id" => "users#favorites"
   get "/users/profile/:id" => "users#profile"
   resources :blogs do

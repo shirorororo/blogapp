@@ -1,4 +1,6 @@
-<h1>ユーザー名：<%= @user.name %></h1>
-<h1>メールアドレス：<%= @user.email %></h1>
-<h1>ユーザー画像：<%= image_tag @user.image %></h1>
+<div class="container">
+  <p>ユーザー名：<%= @user.name %></p>
+  <p>メールアドレス：<%= @user.email %></p>
+  <p><%= image_tag @user.image %><br>ユーザー画像</p>
 <%= link_to '編集する', edit_user_path(current_user) %>
+</div>

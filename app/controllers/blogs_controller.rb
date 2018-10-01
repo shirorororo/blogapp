@@ -1,8 +1,7 @@
 class BlogsController < ApplicationController
   before_action :set_blog, only: [:show, :edit, :update, :destroy]
   def index
-     @blogs = Blog.where(user_id:current_user.id) 
-
+     @blogs = Blog.all 
   end
 
 
