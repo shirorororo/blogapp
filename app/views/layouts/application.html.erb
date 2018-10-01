@@ -15,6 +15,7 @@
       <li><%= link_to "TOP", tops_path %>
       <li><%= link_to "View Posts", blogs_path%>
       <li><%= link_to "My Favorites", "/users/favorites/#{current_user.id}" %>
+      <li><%= link_to "My Posts", "/users/#{current_user.id}" %>
       <li><%= link_to "New Post", new_blog_path %>
       <li><%= link_to "My Page", "/users/profile/#{current_user.id}" %>      
       <li><%= link_to "Logout", session_path(current_user.id), method: :delete %>
