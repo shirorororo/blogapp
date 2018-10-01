@@ -44,7 +44,12 @@ class ImageUploader < CarrierWave::Uploader::Base
   # def filename
   #   "something.jpg" if original_filename
   # end
+  process :resize_to_limit => [300, 300] # 画像サイズの調整
   def default_url
     "default.jpg"
+  end
+  
+  def store_dir
+    "uploads/#{model.class.to_s.underscore}/#{mounted_as}/#{model.id}"
   end
 end
